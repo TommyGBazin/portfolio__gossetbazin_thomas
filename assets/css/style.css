@@ -233,8 +233,8 @@ Contact
     width: 50vw;
     z-index: 3;
     transition: all .3s ease;
-    padding: 2em;
-   
+    padding: 2em;   
+    opacity: 1;
 }
 
 .project .close{
@@ -246,9 +246,46 @@ Contact
   right: 0;
 }
 
- /* .item__project.js-click-none{
-  pointer-events: none;
- } */
+ .projects{
+    max-width: 430px;
+ }
+
+ .projects .item__project{
+    display: inline-block;
+ }
+
+
+.container__projects .project.billet__reduc{
+  background-color: #902C96;
+}
+.container__projects .project.deezer{
+  background-color: #D96039;
+}
+.container__projects .project.agence{
+  background-color: #F3BD41;
+}
+.container__projects .project.charte__graphique{
+  background-color: #1a1a97;
+}
+.container__projects .project.instagram{
+  background-color: #AC3C6D;
+}
+
+.projects .item__project a{
+  transition: color .2s ease;
+}
+
+.projects .item__project.hover-link a{
+  color: rgba(255,255,255,1) !important;
+}
+.projects .item__project.hover-link a .number__list{
+ background-blend-mode: luminosity;
+}
+
+.projects .item__project.hover-active-link a{
+  color: rgba(255,255,255,.41) !important;
+}
+
 
 
 .js-animation-hover-project{
